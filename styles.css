@@ -1,0 +1,179 @@
+/* Resetando o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo cores principais */
+:root {
+    --cor-primaria: #80c6f7; /* Azul clarinho */
+    --cor-secundaria: #003366; /* Azul escuro */
+    --cor-texto: #333;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7faff;
+    color: var(--cor-texto);
+}
+
+/* Barra de navegação */
+header {
+    background-color: var(--cor-secundaria);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção principal */
+.hero {
+    background-color: var(--cor-primaria);
+    text-align: center;
+    padding: 3rem;
+    color: var(--cor-secundaria);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Seção de produtos */
+.produtos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cards-produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #002244;
+}
+
+/* Seção sobre */
+.sobre {
+    background-color: var(--cor-primaria);
+    padding: 2rem;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+}
+
+/* Seção de contato */
+.contato {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contato form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contato input,
+.contato textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato button {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #002244;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+ 
